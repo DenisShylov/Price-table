@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import 'variables.scss';
+@import 'common.scss';
+@import 'price-table.scss';
+@import 'price-table2.scss';
+@import 'price-table3.scss';
+
+* {
+  font-family: montserrat;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: $text-color-background;
+  display: flex;
+  padding: 115px 132px;
+}
