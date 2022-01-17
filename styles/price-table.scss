@@ -7,14 +7,17 @@
   margin: auto;
 
   &__title {
-    width: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    // width: 100px;
     height: 64px;
     font-weight: 700;
     font-size: 35px;
     line-height: 43px;
     text-align: center;
     color: #ffffff;
-    margin: 33px 140px 0 140px;
+    margin: 33px auto 0;
 
     &-item-two {
       font-size: 20px;
@@ -36,6 +39,10 @@
     color: #ffffff;
     background-color: $color-background-green;
     margin-top: 33px;
+
+    &-text {
+      margin: 19px auto;
+    }
   }
 
   &__description {
@@ -47,18 +54,18 @@
     text-align: center;
     color: $text-color-white;
     margin: 0;
-    margin: 40px 26px 0 26px;
+    margin: 40px auto 0;
   }
 
   &__options-list {
-    margin-top: 16px;
+    margin-top: 40px;
 
     &-arrow-icon {
       background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
     }
 
     &-arrow {
-      margin: 22px 18px;
+      margin: 18px 22px;
       position: absolute;
     }
   }
@@ -66,7 +73,11 @@
   &__options-list-block {
     padding: 0;
     list-style-type: none;
+    margin: 0;
 
+    &-row:nth-child(odd) {
+      background-color: $color-background-list;
+    }
     &-item {
       display: flex;
       align-items: center;
@@ -77,15 +88,11 @@
       line-height: 18px;
       color: $text-color-white;
       padding-left: 59px;
-
-      &:nth-child(even) {
-        background-color: $color-background-list;
-      }
     }
   }
 
   &__order-btn {
-    min-width: 155px;
+    max-width: 155px;
     min-height: 40px;
     font-size: 14px;
     line-height: 17px;
@@ -94,6 +101,6 @@
     background: #5bb189;
     border-radius: 20px;
     border: none;
-    margin: 39px 126px;
+    margin: auto;
   }
 }
