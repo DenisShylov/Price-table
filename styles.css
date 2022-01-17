@@ -24,7 +24,7 @@
   line-height: 43px;
   text-align: center;
   color: #ffffff;
-  margin: 33px auto 0;
+  margin: 33px 140px 0;
 }
 .price-card__title-item-two {
   font-size: 20px;
@@ -89,7 +89,7 @@
   padding-left: 59px;
 }
 .price-card__order-btn {
-  max-width: 155px;
+  min-width: 155px;
   min-height: 40px;
   font-size: 14px;
   line-height: 17px;
